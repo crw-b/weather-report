@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Report</title>
+    <link href="styles/index.css" rel="stylesheet">
 </head>
 <body>
-    
+    <input type="text" placeholder="find city">
+    <br>
+    <container id="temp-display">
+        <text id="current-city">Currently displaying weather in Dallas</text>
+        <br>
+        <text id="temp">
+            78
+            <id="units">
+                ºF
+            </id>
+        </text>
+        <br>
+        <button id="down">
+            ❄️
+        </button>
+        <button id="up">
+            🔥
+        </button>
+        <br>
+        <button id="actual">
+            Actual Temp
+        </button>
+    </container>
 </body>
+<footer>
+    <select name="sky">
+        <option value="sunny">sunny</option>
+        <option value="cloudy">cloudy</option>
+        <option value="rainy">rainy</option>
+        <option value="snowy">snowy</option>
+    </select>
+</footer>
 </html>
