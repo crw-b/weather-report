@@ -1,50 +1,77 @@
 body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 30% 30% 20%;
+    gap: 100px;
     background-color: lightblue;
     text-align: center;
+    font-size: 100%;
+}
+
+header {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    justify-content: center;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
 }
 
 #temp-display{
+    justify-content: center;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px;
-    grid-template-columns: 50px 50px 50px 50px;
+    gap: 4px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
 }
 
 #current-city{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 1;
+    justify-content: center;
+    font-size: 1.5em;
 }
 
 #temp{
     grid-column-start:1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 2;
+    font-size: 8em;
 }
 
 #down{
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end: 3;
 }
 
 #up{
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 3;
-    grid-row-end: 3;
 }
 
 #actual{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 4;
-    grid-row-end: 4;
 }
 
 input{
     background-color: black;
     color: white;
+}
+
+button{
+    font-size: 2em;
 }
