@@ -15,6 +15,11 @@ header {
     justify-content: center;
 }
 
+input{
+    background-color: black;
+    color: white;
+}
+
 footer{
     grid-column-start: 1;
     grid-column-end: 5;
@@ -67,11 +72,10 @@ footer{
     grid-row-start: 4;
 }
 
-input{
-    background-color: black;
-    color: white;
-}
-
 button{
     font-size: 2em;
+}
+
+#find{
+    font-size: 0.8em;
 }
