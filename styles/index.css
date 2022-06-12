@@ -67,6 +67,22 @@ footer{
     grid-row-start: 4;
 }
 
+.cloudy{
+    background-color: gray;
+}
+
+.sunny{
+    background-color: yellow;
+}
+
+.rainy{
+    background-color: blue;
+}
+
+.snowy{
+    background-color: white;
+}
+
 input{
     background-color: black;
     color: white;
