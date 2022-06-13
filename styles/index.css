@@ -67,6 +67,14 @@ footer{
     grid-row-start: 4;
 }
 
+#landscape{
+    font-size: 2em;
+}
+
+#reset{
+    font-size: 0.8em;
+}
+
 .cloudy{
     background-color: gray;
 }
@@ -81,6 +89,26 @@ footer{
 
 .snowy{
     background-color: white;
+}
+
+.hot{
+    color: red;
+}
+
+.warm{
+    color: orange;
+}
+
+.pleasant{
+    color: black;
+}
+
+.cool{
+    color: teal;
+}
+
+.cold{
+    color: blue;
 }
 
 input{

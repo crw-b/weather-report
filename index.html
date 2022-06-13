@@ -10,15 +10,16 @@
 <body>
     <header>
         <input id="city" type="text" placeholder="find city">
+        <br>
+        <button id="reset">reset</button>
     </header>
     <container id="temp-display">
-        <text id="current-city">Currently displaying weather in...</text>
+        <text id="current-city">Currently <i>loading</i> temperature in Dallas</text>
         <br>
         <text id="temp">
-            78
-            <id="units">
+            <!-- <id="units">
                 °F
-            </id>
+            </id> -->
         </text>
         <button id="down">
             ❄️
@@ -33,12 +34,16 @@
     </container>
     <footer>
         <select id="sky">
+            <option value="clear">clear</option>
             <option value="sunny">sunny</option>
             <option value="cloudy">cloudy</option>
             <option value="rainy">rainy</option>
             <option value="snowy">snowy</option>
         </select>
+        <br>
+        <text id="landscape"></text>
     </footer>
-    <script src="src/index.js"></script>
+    <script src = "./node_modules/axios/dist/axios.min.js"></script>
+    <script src = "src/index.js"></script>
 </body>
 </html>
